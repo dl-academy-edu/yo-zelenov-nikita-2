@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  align-items: center;
+  padding-top: 50px;;
+  font-family: Open Sans;
+}
+
+.header__logo {
+  margin-right: 60px;
+}
+
+.header__nav{
+  display: flex;
+}
+.header__list{
+  display: flex;
+}
+
+.header__list-link{
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.header__list-item:hover{
+  opacity: 0.5;
+}
+
+.header__list-item:active{
+  opacity: 0.2;
+}
+
+.undotted {
+  list-style-type: none;
+}
+
+.left {
+  margin-right: auto;
+}

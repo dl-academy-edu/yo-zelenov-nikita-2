@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <title>toys</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <h1 class="container title__toys">Toy for kids</h1>
+      <ul class="container header__title">
+        <li><button class="header__button" name="button">Home</button></li>
+        <li><button class="arrow" name="button"><img src="./img/icon/arrow.svg" alt=" to the right"></button></li>
+        <li><button class="header__button" name="button">Catalog</button ></li>
+        <li><button class="arrow" name="button"><img src="./img/icon/arrow.svg" alt=" to the right"></button></li>
+        <li><botton class="header__button-click" name="button" tabindex="0">Toys</botton></li>
+      </ul>
+      <form class="form__toys" method="post" action="">
+        <div class="container form__section">
+          <div class="form__range">
+            <label class="form__label-cost" for="start">Cost</label>
+            <input class="form__input" type="range" name="" id="start" min="0" max="50">
+            <div class="numbers">
+              <p class="numbers__left">0</p>
+              <p class="numbers__right">500</p>
+            </div>
+          </div>
+          <div class="form__colour">
+            <p class="form__label-color">Color</p>
+            <div class="form__colour-title">
+              <input class="form__colour-input" type="checkbox" id="black" name="cost" value="black">
+              <label class="form__color-label" for="black"><p class="color__text">Black</p></label>
+            </div>
+            <div class="form__colour-title">
+              <input class="form__colour-input" type="checkbox" id="blue" name="cost" value="blue">
+              <label class="form__color-label" for="blue"><p class="color__text">Blue</p></label>
+            </div>
+            <div class="form__colour-title">
+              <input class="form__colour-input" type="checkbox" id="green" name="cost" value="green">
+              <label class="form__color-label" for="green"><p class="color__text">Green</p></label>
+            </div>
+            <div class="form__colour-title">
+              <input class="form__colour-input" type="checkbox" id="white" name="cost" value="white">
+              <label class="form__color-label" for="white"><p class="color__text">White</p></label>
+            </div>
+          </div>
+          <div class="form__delivery">
+            <p class="form__label-delivery">Delivery</p>
+            <div class="form__colour-title">
+              <input class="input__delivery" type="radio" name="Delivery" value="1" id="free">
+              <label class="label__delivery" for="free"><p class="delivery__text">Free shipping</p></label>
+            </div>
+            <div class="form__colour-title">
+              <input class="input__delivery" type="radio" name="Delivery" value="2" id="fastship">
+              <label class="label__delivery" for="fastship"><p class="delivery__text">Fast shipping</p></label>
+            </div>
+          </div>
+          <p class="title__amount">Amount</p>
+          <div class="amount">
+            <div class="amount__form">
+              <input class="amount__input min" type="radio" name="radio" value="1" id="min">
+              <label class="amount__label" for="min">0-5</label>
+            </div>
+            <div class="amount__form">
+              <input class="amount__input medium" type="radio" name="radio" value="2" id="medium">
+              <label class="amount__label" for="medium">10-20</label>
+            </div>
+            <div class="amount__form">
+              <input class="amount__input max" class="" type="radio" name="radio" value="3" id="max">
+              <label class="amount__label" for="max">20-50</label>
+            </div>
+          </div>
+          <input class="button__amount-toys" type="button" name="button" value="APPLY">
+        </div>
+      </form>
+      <section class=" container">
+        <ul class="container products">
+          <li class="products__section">
+            <a class="foto__products" href="#"><img src="../img/case.png" alt="SHARKY BEAN BAG CHAIR COVER"></a>
+            <p class="image__text">SHARKY BEAN BAG CHAIR COVER</p>
+            <p class="price">$60.00 USD</p>
+          </li>
+          <li class="products__section">
+            <a class="foto__products" href="#"><img src="../img/gumballmachine.png" alt="GATCHA GATCHA GUMBALL MACHINE"></a>
+            <p class="image__text">GATCHA GATCHA GUMBALL MACHINE</p>
+            <p class="price">$56.00 USD</p>
+          </li>
+          <li class="products__section">
+            <a class="foto__products" href="#"><img src="../img/frame.png" alt="BRASS DECO FRAMES"></a>
+            <p class="image__text">BRASS DECO FRAMES</p>
+            <p class="price">$66.00 USD</p>
+          </li>
+          <li class="products__section">
+            <a class="foto__products" href="#"><img src="../img/candle.png" alt="CHRISTMAS ADVENT SCENTED CANDLE"></a>
+            <p class="image__text">CHRISTMAS ADVENT SCENTED CANDLE</p>
+            <p class="price">$56.00 USD</p>
+          </li>
+          <li class="products__section">
+            <a class="foto__products"href="#"><img src="../img/apron.png" alt="CIBO FULL APRON"></a>
+            <p class="image__text">CIBO FULL APRON</p>
+            <p class="price">$60.00 USD</p>
+          </li>
+          <li class="products__section">
+            <a class="foto__products" href="#"><img src="../img/teacandle.png" alt="TANGLE SPINNING TEA LIGHT"></a>
+            <p class="image__text">TANGLE SPINNING TEA LIGHT</p>
+            <p class="price">$56.00 USD</p>
+          </li>
+        </ul>
+        @@include('blocks/page_arrow.html')
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+  </body>
+</html>

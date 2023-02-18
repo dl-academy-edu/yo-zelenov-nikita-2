@@ -1,10 +1,307 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
-.footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+﻿.footer{
+  background-color: #434343;
+  margin-top: 175px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
 }
+
+.footer__main{
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__navigation{
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  margin-right: 20px;
+}
+
+.footer__navigation-top{
+  color: #AAAAAA;
+  border-bottom: 1px solid #666666;
+  width: 370px;
+  padding-bottom: 23px;
+  margin-bottom: 28px;
+}
+
+.footer__words{
+  color: #ffffff;
+}
+
+.footer__text{
+  padding-bottom: 15px;
+  
+}
+
+.footer__words:hover{
+  opacity: 0.5;
+}
+
+.footer__words:active{
+  opacity: 0.2;
+}
+
+.input{
+  max-width: 100%;
+}
+
+.input__email{
+  display: flex;
+}
+
+.footer__input::placeholder{
+  color: #EBEBEB;
+}
+
+.footer__input{
+  background: #666666;
+  width: 299px;
+  height: 40px;
+  padding: 9px 15px;
+  border: none;
+}
+
+.footer__input:hover{
+  background: #666666;
+  border: 1px solid #FFFDFD;
+}
+
+
+.footer__input:disable{
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+}
+
+
+.footer__link{
+  max-width: 100%;
+  padding: 9px 22px;
+  background: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__logo{
+  gap: 10px;
+  padding-top: 25px;
+  display: flex;
+}
+
+.footer__back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #666666;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.footer__back:hover{
+  opacity: 0.5;
+}
+
+.footer__back:active{
+  opacity: 0.2;
+}
+
+.footer__inner{
+  display: flex;
+  border-top: 1px solid #666666;
+  max-width: 100%;
+  margin-top: 28px;
+  padding-bottom: 100px;
+}
+
+.form__iteam{
+  display: flex;
+  margin-top: 26px;
+}
+
+.simple__rating{
+  position: relative;
+  font-size: 25px;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.simple__rating::before{
+  content:"★★★★★";
+  display: block;
+}
+
+.simple__rating-iteams{
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.simple__rating-iteam{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+}
+
+.simple__rating-label{
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+
+.simple__rating-label::before{
+  content:"★";
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.simple__rating-iteam:checked,
+.simple__rating-iteam:checked ~ .simple__rating-label{
+  color: #C29974;
+
+}
+
+.simple__rating-label:hover,
+.simple__rating-label:hover ~ .simple__rating-label,
+.simple__rating-label:checked ~ .simple__rating-label:hover{
+  color: #836E5B;
+
+}
+
+.footer__rating-text{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.footer__rating-text:hover{
+  text-decoration-line: underline;
+}
+
+.footer__rating-text:active{
+  text-decoration-line: underline;
+}
+
+.footer__text-center{
+  margin-left: 135px;
+  margin-top: 26px;
+}
+
+
+.footer__text-right{
+  margin-left: 109px;
+  margin-top: 26px;
+}
+
+.popup{
+  position: absolute;
+  top: 114px;
+  left: 360px;
+  display: none;
+}
+
+.form{
+  background-color: #E5EAF8;
+  max-width: 100%;
+  z-index: 10;
+  padding: 42px 40px
+}
+
+.column__two-input{
+  display: flex;
+  gap: 20px;
+}
+
+.label__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.label{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1E0606;
+  margin-bottom: 3px;
+}
+
+.placeholder{
+  padding-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.column__input{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.block{
+  min-width: 290px;
+}
+
+.checkbox{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox__label{
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.label__text{
+  margin-left: 35px;
+}
+
+.checkbox__input{
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+}
+
+.checkbox__label::before{
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+}
+
+.checkbox__input:checked + .checkbox__label::before{
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/vector.png);
+  justify-content: center;
+  background-repeat: no-repeat;
+  }

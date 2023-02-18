@@ -5,36 +5,67 @@
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-
-    <title>DL Academy</title>
+    <title>index</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <script>
       var docElement = document.documentElement;
       docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
     </script>
-
-    <!-- Favicon -->
-
-    <!-- build:css -->
     <link href="css/style.min.css" rel="stylesheet">
-    <!-- endbuild -->
   </head>
   <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
+    @@include('blocks/header.html')
+    <main>
+      @@include('blocks/banner.html')
+        @@include('blocks/catalog_index.html')
+      <section class="container delivery__info">
+        <img class="women" src="./img/women.jpg" alt="women">
+        <div class="middle">
+          <ul class="delivery__blog">
+            <li><p class="delivery__info-header">Delivery</p></li>
+            <li class="delivery__info-background"><p class="delivery__info-foreground">Delivery</p></li>
+            <li><p class="delivery__info-guarantee">Guarantee</p></li>
+            <li><p class="delivery__info-credit">Credit</p></li>
+            <li><p class="delivery__info-intro">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p></li>
+            <li><p class="delivery__info-conclusion">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p></li>
+          </ul>
+          <button type="button" class="link__info">LEARN MORE</button>
         </div>
-      </main>
-      @@include('blocks/footer.html')
-    </div>
-
-    <script src="js/app.js" defer></script>
+      </section>
+      <section class="container cection__logo">
+        <div class="corporations">
+          <a class="item" href="https://mail.ru/"><img src="./img/icon/mailRu.svg" alt="Icon logo Mail.ru"></a>
+          <a class="item" href="https://www.apple.com/ru/"><img src="./img/icon/apple.svg" alt="Icon logo Apple"></a>
+          <a class="item" href="https://eltexsl.ru/"><img src="./img/icon/eltex.svg" alt="Icon logo Eltex"> </a>
+          <a class="item" href="https://www.owox.com/products/"><img src="./img/icon/owox.svg" alt="Icon logo Owox"></a>
+        </div>
+      </section>
+      <section class="container company__info">
+        <div class="company__info-background">
+          <div class="company__reference">
+            <ul>
+              <li class="company__reference-title"><p>Design Life Kids</p></li>
+              <li class="company__reference-subtitle"><p>About Us</p></li>
+              <li class="company__reference-description"><p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p></li> 
+            </ul>
+            <button type="button" class="link__info list__link" >buy now</button>
+          </div>
+        </div>
+        <div class="company__contacts">
+          <div class="company__contacts-box">
+            <ul>
+              <li class="company__contacts-title"><p>Contacts</p></li>
+              <li class="company__contacts-subtitle"><p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p></li>
+              <li><iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5369724626457!2d49.28776367588891!3d53.512466262281905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1669274207032!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    @@include('blocks/popup.html')
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
