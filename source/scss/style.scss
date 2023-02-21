@@ -319,6 +319,7 @@
 .middle__link:hover{
   background-color: #C29974;
   border: none;
+  transition-duration: 1s;
 }
 
 .corporations{
@@ -334,6 +335,7 @@
 
 .item:hover{
   opacity: 0.5;
+  transition-duration: 1s;
 }
 
 .item:active{

@@ -38,6 +38,7 @@
 
 .footer__words:hover{
   opacity: 0.5;
+  transition-duration: 1s;
 }
 
 .footer__words:active{
@@ -67,6 +68,7 @@
 .footer__input:hover{
   background: #666666;
   border: 1px solid #FFFDFD;
+  transition-duration: 1s;
 }
 
 
@@ -102,6 +104,7 @@
 
 .footer__back:hover{
   opacity: 0.5;
+  transition-duration: 1s;
 }
 
 .footer__back:active{
@@ -178,6 +181,7 @@
 .simple__rating-label:hover ~ .simple__rating-label,
 .simple__rating-label:checked ~ .simple__rating-label:hover{
   color: #836E5B;
+  transition-duration: 1s;
 
 }
 

@@ -282,6 +282,7 @@ margin-right: 94px;
 
 .amount__label:hover{
   background: #EDDEEB;
+  transition-duration: 1s;
 }
 
 .min:checked + .amount__label::before{
@@ -339,6 +340,7 @@ margin-right: 94px;
 .button__amount-toys:hover{
   background-color: #C29974;
   border: none;
+  transition-duration: 1s;
 }
 
 .button__amount-toys:active{

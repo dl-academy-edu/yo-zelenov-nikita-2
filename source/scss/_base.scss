@@ -50,6 +50,7 @@ ul{
 
 .header__logo:hover{
   opacity: 0.5;
+  transition-duration: 1s;
 }
 
 .header__logo:active{
@@ -114,6 +115,7 @@ ul{
 
 .close:hover {
   opacity: 0.5;
+  transition-duration: 1s;
 }
 
 .close:active {
