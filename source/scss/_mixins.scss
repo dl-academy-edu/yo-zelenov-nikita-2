@@ -23,7 +23,23 @@
 
 @mixin move {
   animation-name: movecloud;
-  animation-duration: 10s;
+  animation-duration: 30s;
+  animation-iteration-count:infinite;
+  animation-direction:linear;
+  animation-fill-mode:forwards;
+}
+
+@mixin movecar {
+  animation-name: movecar;
+  animation-duration: 15s;
+  animation-iteration-count:infinite;
+  animation-direction:linear;
+  animation-fill-mode:forwards;
+}
+
+@mixin messagetaxi {
+  background-image: url(../img/messagetaxi.png);
+  animation-duration: 2s;
   animation-iteration-count:infinite;
   animation-direction:linear;
   animation-fill-mode:forwards;
