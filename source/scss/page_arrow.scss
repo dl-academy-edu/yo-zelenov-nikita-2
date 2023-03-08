@@ -1,0 +1,33 @@
+.page__number{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img__arrow{
+  display: flex;
+}
+
+
+.page__arrow{
+  display: flex;
+  gap: 65px;
+}
+
+.button__section{
+  display: flex;
+  background-color: #ffffff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.button__section:hover{
+  color: #C29974;
+  transition-duration: 1s;
+}

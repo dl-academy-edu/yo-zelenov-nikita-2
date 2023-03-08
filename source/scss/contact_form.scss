@@ -1,0 +1,112 @@
+.form{
+  background-color: #E5EAF8;
+  max-width: 680px;
+  padding: 42px 40px;
+}
+
+.label__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.label{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  margin-bottom: 3px;
+}
+
+.placeholder{
+  padding-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.column__input{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.column__two-input{
+  display: flex;
+  gap: 20px;
+}
+
+.block{
+  min-width: 290px;
+}
+
+.checkbox{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox__label{
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.checkbox__input{
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+}
+
+.label__text{
+  margin-left: 35px;
+}
+
+.checkbox__label::before{
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+}
+
+.checkbox__input:checked + .checkbox__label::before{
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/vector.png);
+  justify-content: center;
+  background-repeat: no-repeat;
+  }
+
+.button__amount-contact{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+  background-color: #000000;
+  padding: 9px 22px;
+  max-width: 106px;
+}
+
+.button__amount-contact:hover{
+  background-color: #C29974;
+  border: none;
+  transition-duration: 1s;
+}
+
+.button__amount-contact:active{
+  background-color: #CFAF91;
+  border: none;
+}

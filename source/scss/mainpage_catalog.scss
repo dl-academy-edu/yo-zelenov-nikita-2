@@ -1,0 +1,94 @@
+.main{
+  display: flex;
+}
+
+.main__section{
+  height: 563px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 55px;
+}
+
+.main__section-kids{
+  position: relative;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 280px;
+  height: 270px;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.main__section-text{
+  position: absolute;
+  width: 129px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.main__section-text:hover{
+  text-decoration-line: underline;
+}
+
+.main__section-text:active{
+  text-decoration-line: underline;
+}
+
+.main__section-sock{
+  background-color:#EADDD3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 270px;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.main__section-toys{
+  background-color: #F8F2DA;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 270px;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.main__section-ded{
+  background-color: #D5D4E1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 270px;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  margin-left: 205px;
+}
+
+.main__section-flamingos{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 270px;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.main__section-outerwear{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 270px;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}

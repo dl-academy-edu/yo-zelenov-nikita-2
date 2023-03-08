@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <title>Catalog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <h1 class="container title_main">Category Products</h1>
+      <section class="container header__title-catalog">
+        <button class="title__link" href="">Home</button>
+        <button class="right__button"><img src="./img/icon/arrow.svg" alt=" to the right"></button>
+        <p class="title__catalog">Catalog</p>
+      </section>
+      @@include('blocks/mainpage_catalog.html')
+      <section class="container">
+        <ul class="title__list">
+          <h2 class="title__text">Product Description</h2>
+          <li class="title__list-text"><p class="text__wight">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p></li>
+          <li class="title__list-text"><p class="text__wight">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p></li>
+          <li class="title__list-text"><p class="text__wight">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p></li>
+        </ul>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+  </body>
+</html>
