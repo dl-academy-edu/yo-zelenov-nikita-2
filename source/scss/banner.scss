@@ -32,12 +32,16 @@
   border: none;
 }
 
+.banner__img {
+  max-width: 636px;
+}
+
 .banner__monster{
   position: absolute;
-  width: 636px;
+  max-width: 100%;
   height: 461px;
-  top: -89px;
-  left: 486px;
+  top: -24%;
+  left: 41%;
 }
 
 .banner__title{
