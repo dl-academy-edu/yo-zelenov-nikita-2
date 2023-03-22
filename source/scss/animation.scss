@@ -1,0 +1,322 @@
+.title__animation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-top: 65px;
+}
+
+.subtitle{
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 76px;
+
+
+  &__button {
+    background-color: #ffffff;
+    border: none;
+    font-family: 'Crimson Text', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+  }
+
+  &__arrow {
+    background: #ffffff;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 7px;
+  }
+
+  &__button:hover{
+    opacity: 0.5;
+    transition-duration: 1s;
+  }
+
+  &__button:active{
+    opacity: 0.2;
+  }
+}
+
+.animation {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__clouds {
+    position: relative;
+    height: 134px;
+  }
+
+  &__clouds-one {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    @include move;
+  }
+
+  &__clouds-two {
+    position: absolute;
+    left: 300px;
+    bottom: 10px;
+    @include move;
+  }
+
+  &__clouds-three {
+    position: absolute;
+    left: 500px;
+    bottom: 40px;
+    @include move;
+  }
+
+  &__clouds-four {
+    position: absolute;
+    left: 700px;
+    bottom: 10px;
+    @include move;
+  }
+
+  &__clouds-five {
+    position: absolute;
+    left: 980px;
+    bottom: 30px;
+    @include move;
+  }
+
+  &__clouds-six {
+    position: absolute;
+    left: 1175px;
+    bottom: 30px;
+    @include move;
+  }
+
+  &__clouds-sun {
+    position: absolute;
+    left: 80%;
+    bottom: 55%;
+  }
+
+  &__background {
+    max-width: 100%;
+    height: 630px;
+  }
+
+  &__onecar {
+    background-repeat: no-repeat;
+    max-width: 251px;
+    height: 100px;
+    position: absolute;
+    top: 49%;
+    @include movecar;
+  }
+
+  &__twocar {
+    background-repeat: no-repeat;
+    max-width: 200px;
+    height: 96px;
+    position: absolute;
+    top: 49%;
+    left: 24%;
+    @include movecar;
+  }
+
+  &__threecar {
+    background-repeat: no-repeat;
+    max-width: 246px;
+    height: 65px;
+    position: absolute;
+    top: 52%;
+    left: 46%;
+    @include movecar;
+  }
+
+  &__fourcar {
+    background-repeat: no-repeat;
+    max-width: 268px;
+    height: 125px;
+    position: absolute;
+    top: 46%;
+    left: 78%;
+    @include movecar;
+  }
+
+  &__lantern {
+    background-repeat: no-repeat;
+    max-width: 140px;
+    height: 350px;
+    position: absolute;
+    top: 18%;
+    left: 34%;
+  }
+
+  &__taxi {
+    background-repeat: no-repeat;
+    max-width: 778px;
+    height: 266px;
+    position: absolute;
+    top: 48%;
+    left: 41%;
+    animation-name: movetaxi;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+    animation-fill-mode:forwards;
+  }
+
+  &__blacklantern {
+    background-repeat: no-repeat;
+    max-width: 190px;
+    height: 560px;
+    position: absolute;
+    top: 16%;
+    left: 78%;
+  }
+
+  &__girl {
+    background-repeat: no-repeat;
+    max-width: 91px;
+    height: 269px;
+    position: absolute;
+    top: 51%;
+    left: 18%;
+  }
+
+  &__luggage {
+    background-repeat: no-repeat;
+    max-width: 192px;
+    height: 96px;
+    position: absolute;
+    top: 72%;
+    left: 18%;
+    z-index: 1;
+  }
+
+  &__man {
+    background-repeat: no-repeat;
+    max-width: 205px;
+    height: 391px;
+    position: absolute;
+    top: 33%;
+    left: 27%;
+  }
+}
+
+
+.messagetaxi {
+  position: absolute;
+  opacity: 0;
+  max-width: 100%;
+  top: 40%;
+  left: 45%;
+  animation-name: dialoguetaxi;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+}
+
+.messagegirl {
+  position: absolute;
+  opacity: 0;
+  max-width: 100%;
+  top: 37%;
+  left: 11%;
+  animation-name: dialoguegirl;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+}
+
+.messageman {
+  position: absolute;
+  opacity: 0;
+  max-width: 100%;
+  top: 27%;
+  left: 26%;
+  animation-name: dialoguegman;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+}
+
+
+
+@keyframes movecloud {
+  0% {
+    transform: translateX(-1500px);
+  }
+  100% {
+    transform: translateX(1300px);
+  }
+}
+
+@keyframes movecar {
+  0% {
+    transform: translateX(-1500px);
+  }
+  100% {
+    transform: translateX(1350px);
+  }
+}
+
+@keyframes movetaxi {
+  0% {
+    transform: translateX(1350px);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+  75% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(-1500px);
+  }
+}
+
+@keyframes dialoguetaxi {
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+}
+
+@keyframes dialoguegirl {
+  11% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes dialoguegman {
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  36% {
+    opacity: 0;
+  }
+}
+

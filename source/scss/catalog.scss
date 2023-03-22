@@ -1,0 +1,79 @@
+.header__title-catalog{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+
+.title_main{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-bottom: 15px;
+}
+
+.header{
+  margin-bottom: 60px;
+}
+
+.title__link{
+  background-color: #ffffff;
+  border: none;
+  font-family: 'Crimson Text', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1E0606;
+}
+
+.right__button{
+  background: #ffffff;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title__catalog{
+  font-family: 'Crimson Text' sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1E0606;
+  opacity: 0.5;
+}
+
+.title__ded{
+  margin-left: -30px;
+}
+
+.title__list{
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.title__text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-bottom: 25px;
+  }
+
+.title__list-text{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 22px;
+  color: #1E0606;
+  margin-bottom: 15px;
+}
+
+.text__wight{
+  width: 680px;
+}
+
